@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    h1 { padding-top: 60px;}
+    .content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        padding: 0 50px; /* Add external padding */
+    }
+
+    .content ul li {
+        background-color: #1f1f1f;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #333333; /* Add border around each element */
+    }
+
+    .content ul li h2 {
+        margin: 0 0 10px;
+    }
+
+    .content ul li p {
+        margin: 0 0 10px;
+    }
+</style>
+
+<h1>{{ user.username }}'s Recommendations</h1>
+<div class="content">
+<ul>
+    {% for book in recommendations %}
+        <li class="books">
+            <h2>{{ book.title }}</h2>
+            <p><strong>By:</strong> {{ book.author }}</p>
+            <p><strong>Category:</strong> {{ book.category }}</p>
+            <a class="lnk   " href="{% url 'book_detail' book.id %}">View Details</a>
+        </li>
+    {% empty %}
+        <li>No books add.</li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}

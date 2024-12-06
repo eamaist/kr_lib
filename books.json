@@ -1,0 +1,266 @@
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "Twilight",
+      "author": "Stephenie Meyer",
+      "description": "The story of the love between vampire Edward Cullen and ordinary girl Bella Swan, who moves to the small town of Forks and finds herself drawn into a world of the supernatural.",
+      "genre": "Romance",
+      "category": "Twilight Saga"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "Percy Jackson and the Lightning Thief",
+      "author": "Rick Riordan",
+      "description": "The adventures of modern teenager Percy Jackson, who discovers he is the son of Poseidon and embarks on a dangerous journey to return Zeus's stolen lightning bolt.",
+      "genre": "Fantasy",
+      "category": "Percy Jackson & the Olympians"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "The House of Hades",
+      "author": "Rick Riordan",
+      "description": "The continuation of Percy Jackson's adventures and his friends, where they face new threats and travel to the House of Hades to save the world from ancient evil.",
+      "genre": "Fantasy",
+      "category": "Heroes of Olympus"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "description": "The story of student Rodion Raskolnikov, who commits the murder of a pawnbroker and her sister, and his internal struggle with guilt and moral dilemmas.",
+      "genre": "Novel",
+      "category": "Russian Classics"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "description": "The first book in the 'A Song of Ice and Fire' series, describing the struggle for power in the fictional world of Westeros, where several noble families vie for the Iron Throne.",
+      "genre": "Fantasy",
+      "category": "A Song of Ice and Fire"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 6,
+    "fields": {
+      "title": "Fire & Blood: The Targaryen Dynasty",
+      "author": "Erin Bowman",
+      "description": "A prequel to the 'A Song of Ice and Fire' series, telling the story of the Targaryens and their struggle for power, filled with intrigue, betrayal, and dragons.",
+      "genre": "Fantasy",
+      "category": "A Song of Ice and Fire"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 7,
+    "fields": {
+      "title": "Fire & Blood: The Dance of the Dragons",
+      "author": "Erin Bowman",
+      "description": "The continuation of the Targaryen story, where new secrets are revealed and the struggle for power continues in a world full of danger and intrigue.",
+      "genre": "Fantasy",
+      "category": "A Song of Ice and Fire"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 8,
+    "fields": {
+      "title": "A Knight of the Seven Kingdoms",
+      "author": "George R. R. Martin",
+      "description": "A collection of stories about the adventures of knight Dunk and his squire Egg, who travel through the Seven Kingdoms and face various challenges.",
+      "genre": "Fantasy",
+      "category": "A Song of Ice and Fire"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 9,
+    "fields": {
+      "title": "A Feast for Crows",
+      "author": "George R. R. Martin",
+      "description": "The fourth book in the 'A Song of Ice and Fire' series, continuing the epic saga of the struggle for power in Westeros, where new conflicts and intrigues unfold.",
+      "genre": "Fantasy",
+      "category": "A Song of Ice and Fire"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 10,
+    "fields": {
+      "title": "The Lovely Bones",
+      "author": "Alice Sebold",
+      "description": "The story of a girl named Susie Salmon, who is murdered and watches over her family from heaven, trying to help them cope with her loss and find her killer.",
+      "genre": "Novel",
+      "category": "Standalone"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 11,
+    "fields": {
+      "title": "The Song of Achilles",
+      "author": "Madeline Miller",
+      "description": "A novel about Achilles, reimagining the myths of the Trojan War and revealing deep human emotions and relationships.",
+      "genre": "Novel",
+      "category": "Standalone"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 12,
+    "fields": {
+      "title": "Fathers and Sons",
+      "author": "Ivan Turgenev",
+      "description": "The story of generational conflict and nihilism, where the main character, young doctor and nihilist Eugene Bazarov, confronts traditional values and societal norms.",
+      "genre": "Novel",
+      "category": "Russian Classics"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 13,
+    "fields": {
+      "title": "New Moon",
+      "author": "Stephenie Meyer",
+      "description": "The second book in the Twilight series, where Bella Swan faces new challenges and heartbreak as she navigates her relationship with Edward Cullen.",
+      "genre": "Romance",
+      "category": "Twilight Saga"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 14,
+    "fields": {
+      "title": "Eclipse",
+      "author": "Stephenie Meyer",
+      "description": "The third book in the Twilight series, where Bella Swan must choose between her love for Edward Cullen and her friendship with Jacob Black.",
+      "genre": "Romance",
+      "category": "Twilight Saga"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 15,
+    "fields": {
+      "title": "Breaking Dawn",
+      "author": "Stephenie Meyer",
+      "description": "The fourth book in the Twilight series, where Bella Swan and Edward Cullen face new challenges as they start a family together.",
+      "genre": "Romance",
+      "category": "Twilight Saga"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 16,
+    "fields": {
+      "title": "Midnight Sun",
+      "author": "Stephenie Meyer",
+      "description": "The fifth book in the Twilight series, retelling the events of the first book from Edward Cullen's perspective.",
+      "genre": "Romance",
+      "category": "Twilight Saga"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 17,
+    "fields": {
+      "title": "Percy Jackson and the Sea of Monsters",
+      "author": "Rick Riordan",
+      "description": "The second book in the Percy Jackson & the Olympians series, where Percy and his friends embark on a new adventure to save Camp Half-Blood.",
+      "genre": "Fantasy",
+      "category": "Percy Jackson & the Olympians"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 18,
+    "fields": {
+      "title": "Percy Jackson and the Titan's Curse",
+      "author": "Rick Riordan",
+      "description": "The third book in the Percy Jackson & the Olympians series, where Percy and his friends face new threats and challenges.",
+      "genre": "Fantasy",
+      "category": "Percy Jackson & the Olympians"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 19,
+    "fields": {
+      "title": "Percy Jackson and the Battle of the Labyrinth",
+      "author": "Rick Riordan",
+      "description": "The fourth book in the Percy Jackson & the Olympians series, where Percy and his friends navigate the Labyrinth to save Camp Half-Blood.",
+      "genre": "Fantasy",
+      "category": "Percy Jackson & the Olympians"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 20,
+    "fields": {
+      "title": "Percy Jackson and the Last Olympian",
+      "author": "Rick Riordan",
+      "description": "The fifth book in the Percy Jackson & the Olympians series, where Percy and his friends face the final battle against the Titans.",
+      "genre": "Fantasy",
+      "category": "Percy Jackson & the Olympians"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 21,
+    "fields": {
+      "title": "The Lost Hero",
+      "author": "Rick Riordan",
+      "description": "The first book in the Heroes of Olympus series, introducing new characters and adventures in the world of Greek and Roman mythology.",
+      "genre": "Fantasy",
+      "category": "Heroes of Olympus"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 22,
+    "fields": {
+      "title": "The Son of Neptune",
+      "author": "Rick Riordan",
+      "description": "The second book in the Heroes of Olympus series, where Percy Jackson returns and faces new challenges in the Roman world.",
+      "genre": "Fantasy",
+      "category": "Heroes of Olympus"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 23,
+    "fields": {
+      "title": "The Mark of Athena",
+      "author": "Rick Riordan",
+      "description": "The third book in the Heroes of Olympus series, where the heroes face new threats and adventures.",
+      "genre": "Fantasy",
+      "category": "Heroes of Olympus"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 24,
+    "fields": {
+      "title": "The Blood of Olympus",
+      "author": "Rick Riordan",
+      "description": "The fifth book in the Heroes of Olympus series, where the heroes face the final battle against the giants.",
+      "genre": "Fantasy",
+      "category": "Heroes of Olympus"
+    }
+  }
+]

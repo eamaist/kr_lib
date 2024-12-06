@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>{{ user.username }}'s bookmarks</h1>
+<div class="content">
+<ul>
+    {% for book in books %}
+        <li class="books">
+            <h2>{{ book.title }}</h2>
+            <p><strong>By:</strong> {{ book.author }}</p>
+            <a class="lnk" href="{% url 'book_detail' book.id %}">View Details</a>
+        </li>
+    {% empty %}
+        <li>No books add.</li>
+    {% endfor %}
+</ul>
+    </div>
+{% endblock %}

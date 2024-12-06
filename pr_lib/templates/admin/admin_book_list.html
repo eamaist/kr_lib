@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .table-container {
+    padding: 20px;
+  }
+  .description-cell {
+    max-width: 500px;
+    word-wrap: break-word;
+  }
+   .table {
+    border-spacing: 10px;
+    border-collapse: separate;
+  }
+</style>
+
+
+
+  <h1>Book List</h1>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for book in books %}
+          <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td class="description-cell">{{ book.description }}</td>
+            <td>
+              <a href="{% url 'edit_book' book.id %}" class="btn btn-primary">Edit</a>
+              <form method="post" action="{% url 'delete_book' book.id %}" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <a href="{% url 'add_book' %}" class="btn btn-success">Add Book</a>
+{% endblock %}

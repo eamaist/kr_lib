@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Library{% endblock %}</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #333333;
+        }
+        nav ul li a.logout {
+            color: red;
+            background-color: #1f1f1f;
+        }
+        nav ul li a.logout:hover {
+            background-color: #333333;
+        }
+        .btn {
+            background-color: #444444;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #555555;
+        }
+        .btn-bookmarked {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+        .btn-bookmarked:hover {
+            background-color: #eeeeee;
+        }
+        .lnk {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .lnk:hover {
+            text-decoration: underline;
+        }
+        h1 { padding-top: 60px;}
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            padding: 0 50px; /* Add external padding */
+        }
+        .content ul li {
+            background-color: #1f1f1f;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #333333; /* Add border around each element */
+        }
+        .content ul li h2 {
+            margin: 0 0 10px;
+        }
+        .content ul li p {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'book_list' %}">Books</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'recommendations' %}">Recommendations</a></li>
+                    <li><a href="{% url 'bookmarks' %}" style="color: #ffffff">{{user.username}}</a></li>
+                    <li><a class="logout" href="{% url 'logout' %}?next=/">Logout</a></li>
+                    {% if user.is_superuser %}
+                        <li><a href="{% url 'user_list' %}">User List</a></li>
+                        <li><a href="{% url 'admin_book_list' %}">Book List</a></li>
+                    {% endif %}
+                {% else %}
+                    <li><a href="{% url 'login' %}?next=/">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav ul li a').each(function () {
+                if ($(this).attr('href') === window.location.pathname) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
